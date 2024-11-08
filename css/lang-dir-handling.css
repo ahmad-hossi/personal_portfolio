@@ -1,0 +1,17 @@
+[dir=rtl] {
+    * {
+        font-family: 'SST Arabic', sans-serif;
+    }
+    .contact .custom-button {
+        border-top-left-radius: 0!important;
+    }
+}
+
+[dir=ltr] {
+    * {
+        font-family: 'Roboto Regular', sans-serif;
+    }
+    .contact .custom-button {
+        border-top-right-radius: 0!important;
+    }
+}

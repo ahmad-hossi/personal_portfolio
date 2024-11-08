@@ -1,0 +1,22 @@
+footer {
+    background-color: var(--light-gray)!important;
+}
+footer .copy-rights {
+    border-top: solid 2px var(--primary-blue)!important;
+}
+footer .social-media-list span {
+    width: 40px;
+    height: 40px;
+}
+footer .social-media-list span i {
+    font-size: 28px;
+}
+footer .social-media-list li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--main-color);
+}
+footer h6 {
+    width: 160px;
+    border-bottom: solid 2px var(--primary-blue);
+}

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/components/buttons.css" />
+    <link rel="stylesheet" href="./css/lang-dir-handling.css" />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,9 +17,343 @@
       rel="stylesheet"
       href="./node_modules/mdi/css/materialdesignicons.min.css"
     />
+    <link rel="stylesheet" href="./font/roboto/style.css" />
+    <link rel="stylesheet" href="./font/sst-arabic/style.css" />
   </head>
   <body>
-    <h1 class="text-white bg-dark p-3 text-center">hello world</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/prand.png" class="me-2" width="50px" alt="" />
+            <strong>Abdulaziz Shahrour</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item px-2 active">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">blogs & articles</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item px-2 contact">
+                <button
+                  class="btn btn-sm ms-3 py-2 px-3 rounded-pill custom-button hot-red"
+                >
+                  Contact Me
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="pt-5" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-lg-start col-lg-6 order-2 hero">
+              <span>I'm A Professional</span>
+              <h1>Software Engineer</h1>
+              <div class="mt-5">
+                <button
+                  class="btn py-2 px-4 rounded-pill custom-button hot-red"
+                >
+                  Hire Me
+                </button>
+                <button
+                  class="btn btn-sm ms-3 p-1 px-3 rounded-pill custom-button primary-blue"
+                >
+                  <i class="mdi mdi-play mdi-24px"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+              <div class="photo-container">
+                <div class="bg-circle"></div>
+                <img src="./images/photo.png" class="h-100 photo" alt="" />
+                <img src="./images/cloud.png" class="w-100 cloud" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" id="services">
+        <h4 class="title">provide you best best software service</h4>
+        <p class="m-0 text-center">
+          <small>
+            I always follow professional workflow and provide you best service.
+          </small>
+        </p>
+        <div class="container pt-5">
+          <div class="row">
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/front-end.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">Front end development</h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/ai-development.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">
+                Artificial intelligence Development
+              </h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/full-stack-developments.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">Full Stack Development</h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/web-app.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">Web Apps</h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/web-elements.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">Web Elements</h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+            <div
+              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
+            >
+              <img
+                src="./images/services/responsive.png"
+                width="64"
+                height="64"
+                alt=""
+              />
+              <h5 class="fw-bold mb-3 mt-4">Responsive Applications</h5>
+              <p class="m-0 mx-auto" style="width: 80%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+                blanditiis et illum mollitia vel aperiam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5 d-none d-md-block"></div>
+            <div class="col-12 col-md-7">
+              <h4 class="title text-start">my skills</h4>
+              <h4 class="title text-start">about me</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <h4 class="title">we have a great portfolio to check</h4>
+      </section>
+      <section class="py-5">
+        <h4 class="title">my workflow</h4>
+      </section>
+      <section class="py-5">
+        <h4 class="title">see clients feedback</h4>
+      </section>
+      <section class="py-5">
+        <h4 class="title">my success</h4>
+      </section>
+      <section class="py-5">
+        <h4 class="title">blogs & articles</h4>
+      </section>
+      <section class="py-5"></section>
+    </main>
+    <footer>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./images/prand.png" class="me-2" width="50px" alt="" />
+              <strong>Abdulaziz Shahrour</strong>
+            </a>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              perspiciatis voluptas laborum ab amet, quis, laudantium ipsa cum
+              voluptatibus soluta nihil minus? Minima dolorem sint saepe,
+              possimus corporis deleniti voluptatem.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+            <h6 class="mb-3 pb-2">
+              <strong>Site Map</strong>
+            </h6>
+            <ul class="list-unstyled">
+              <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#">Home</a>
+                </small>
+              </li>
+              <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#"
+                    >Projects</a
+                  >
+                </small>
+              </li>
+              <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#">Blogs</a>
+                </small>
+              </li>
+              <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#"
+                    >About Me</a
+                  >
+                </small>
+              </li>
+              <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#"
+                    >Contact Me</a
+                  >
+                </small>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+            <h6 class="mb-3 pb-2">
+              <strong>Social Media</strong>
+            </h6>
+            <ul class="list-unstyled social-media-list">
+              <li class="d-inline-flex align-items-center">
+                <span
+                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                  style="color: #0077b5"
+                >
+                  <i class="mdi mdi-linkedin"></i>
+                </span>
+              </li>
+              <li class="d-inline-flex align-items-center">
+                <span
+                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                  style="color: #1877f2"
+                >
+                  <i class="mdi mdi-facebook"></i>
+                </span>
+              </li>
+              <li class="d-inline-flex align-items-center">
+                <span
+                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                  style="color: #40c351"
+                >
+                  <i class="mdi mdi-whatsapp"></i>
+                </span>
+              </li>
+              <li class="d-inline-flex align-items-center">
+                <span
+                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                  style="color: #29b6f6"
+                >
+                  <i class="mdi mdi-telegram"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+            <h6 class="mb-3 pb-2">
+              <strong>Contact</strong>
+            </h6>
+
+            <ul class="list-unstyled">
+              <li>
+                <small> Phone: +963 957 982 468 </small>
+              </li>
+              <li>
+                <small> E-mail: ite.abdo.sh.crafter.front@gmail.com</small>
+              </li>
+              <li>
+                <small> Address: Syria - Aleppo</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="m-0 p-3 text-center copy-rights">
+        Made with ❤️ By Abdulaziz Shahrour &copy 2024 - All Rights Reserved
+      </p>
+    </footer>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>

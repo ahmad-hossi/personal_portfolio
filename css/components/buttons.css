@@ -1,0 +1,26 @@
+/* hot-red */
+.custom-button.hot-red {
+    border: solid 1px var(--hot-red)!important;
+}
+.custom-button.hot-red {
+    color: var(--hot-red)!important;
+}
+.custom-button.hot-red:hover {
+    background-color: var(--hot-red)!important;
+}
+.custom-button.hot-red:hover {
+    color: white!important;
+}
+/* primary-blue */
+.custom-button.primary-blue {
+    border: solid 1px var(--primary-blue)!important;
+}
+.custom-button.primary-blue {
+    color: var(--primary-blue)!important;
+}
+.custom-button.primary-blue:hover {
+    background-color: var(--primary-blue)!important;
+}
+.custom-button.primary-blue:hover {
+    color: white!important;
+}

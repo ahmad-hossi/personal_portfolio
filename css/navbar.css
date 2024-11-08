@@ -1,0 +1,30 @@
+.nav-item {
+    position: relative;
+    margin: 0px 2px;
+}
+.nav-item:not(.contact)::after,
+.nav-item.active::after {
+    content:'';
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    background-color: var(--light-blue);
+    transition: .4s;
+}
+.nav-item.active::after,
+.nav-item:hover:not(.contact)::after {
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+.nav-item:hover:not(.contact) a,
+.nav-item.active a {
+    color: var(--light-blue);
+}
+.nav-item .nav-link {
+    -webkit-user-select: none;
+    user-select: none;
+    text-transform: capitalize;
+}
