@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/components/buttons.css" />
-    <link rel="stylesheet" href="./css/lang-dir-handling.css" />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -17,12 +12,18 @@
       rel="stylesheet"
       href="./node_modules/mdi/css/materialdesignicons.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/components/buttons.css" />
+    <link rel="stylesheet" href="./css/components/progress-bar.css" />
+    <link rel="stylesheet" href="./css/lang-dir-handling.css" />
     <link rel="stylesheet" href="./font/roboto/style.css" />
     <link rel="stylesheet" href="./font/sst-arabic/style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg py-3">
+      <nav class="navbar sticky navbar-expand-lg py-3">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img src="./images/prand.png" class="me-2" width="50px" alt="" />
@@ -42,23 +43,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item px-2 active">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">home</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#services">services</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link" href="#">blogs & articles</a>
+                <a class="nav-link" href="#projects">projects</a>
               </li>
+              <!-- <li class="nav-item px-2">
+                <a class="nav-link" href="#blogs-articles">blogs & articles</a>
+              </li> -->
               <li class="nav-item px-2">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#aboutme">about me</a>
               </li>
               <li class="nav-item px-2 contact">
-                <button
-                  class="btn btn-sm ms-3 py-2 px-3 rounded-pill custom-button hot-red"
-                >
-                  Contact Me
-                </button>
+                <a href="#contact">
+                  <button
+                    class="btn btn-sm ms-3 py-2 px-3 rounded-pill custom-button hot-red"
+                  >
+                    Contact Me
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -73,16 +79,26 @@
               <span>I'm A Professional</span>
               <h1>Software Engineer</h1>
               <div class="mt-5">
-                <button
-                  class="btn py-2 px-4 rounded-pill custom-button hot-red"
+                <a
+                  class="text-decoration-none"
+                  href="https://www.linkedin.com/in/abdulaziz-shahrour/overlay/1731069374569/single-media-viewer?type=DOCUMENT&profileId=ACoAAC-n2m0B4E8DaiC6fsOsne-DJs73BJ3uwVQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BCiHRxv%2BORNacXIoiNO4s%2FA%3D%3D"
                 >
-                  Hire Me
-                </button>
-                <button
-                  class="btn btn-sm ms-3 p-1 px-3 rounded-pill custom-button primary-blue"
+                  <button
+                    class="btn py-2 px-4 rounded-pill custom-button hot-red"
+                  >
+                    My CV
+                  </button>
+                </a>
+                <a
+                  class="text-decoration-none"
+                  href="https://www.linkedin.com/in/abdulaziz-shahrour/"
                 >
-                  <i class="mdi mdi-play mdi-24px"></i>
-                </button>
+                  <button
+                    class="btn ms-2 p-2 px-3 rounded-pill custom-button primary-blue"
+                  >
+                    <i class="mdi mdi-linkedin mdi-16px"></i>
+                  </button>
+                </a>
               </div>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2">
@@ -104,9 +120,7 @@
         </p>
         <div class="container pt-5">
           <div class="row">
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/front-end.png"
                 width="64"
@@ -121,9 +135,7 @@
                 blanditiis et illum mollitia vel aperiam.
               </p>
             </div>
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/ai-development.png"
                 width="64"
@@ -140,9 +152,7 @@
                 blanditiis et illum mollitia vel aperiam.
               </p>
             </div>
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/full-stack-developments.png"
                 width="64"
@@ -157,9 +167,7 @@
                 blanditiis et illum mollitia vel aperiam.
               </p>
             </div>
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/web-app.png"
                 width="64"
@@ -174,9 +182,7 @@
                 blanditiis et illum mollitia vel aperiam.
               </p>
             </div>
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/web-elements.png"
                 width="64"
@@ -191,9 +197,7 @@
                 blanditiis et illum mollitia vel aperiam.
               </p>
             </div>
-            <div
-              class="text-center col-12 col-md-6 col-lg-3 col-xl-4 py-5 px-3 service"
-            >
+            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
               <img
                 src="./images/services/responsive.png"
                 width="64"
@@ -211,35 +215,250 @@
           </div>
         </div>
       </section>
-      <section class="py-5">
-        <div class="container">
+      <section class="py-5" id="aboutme">
+        <h4 class="title">about me</h4>
+        <div class="container mt-5">
           <div class="row">
-            <div class="col-12 col-md-5 d-none d-md-block"></div>
+            <div class="col-12 col-md-5 d-none d-md-block">
+              <div class="skills-photo-container mx-auto">
+                <span class="top-corner"></span>
+                <span class="left-corner"></span>
+                <img src="./images/photo.png" class="h-100 photo" alt="" />
+              </div>
+            </div>
             <div class="col-12 col-md-7">
-              <h4 class="title text-start">my skills</h4>
-              <h4 class="title text-start">about me</h4>
+              <p>
+                An experienced front-end developer, my role is to write and
+                design front-end components that meet the requirements of our
+                models and fulfill our users' stories. Proficient in Angular 6+,
+                Vue.js, JQuery, Cascading Style Sheets, CSS, JavaScript, and
+                SCSS. A strong engineering professional with a Bachelor's degree
+                in Computer Science from Aleppo University.
+                <br />
+                keen on different types of technology. Some of my other
+                interests are learning different languages like English. And in
+                order to further develop myself, I learn something new every day
+                by collecting knowledge from various branches of science, this
+                helps me motivate my work and allows me to move forward steadily
+                in my career path.
+              </p>
+              <h5 class="title text-start">my skills</h5>
+              <div>
+                <ul class="list-unstyled">
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <div>
+                      <strong class="text-nowrap">Front end languages</strong
+                      ><br />
+                      <small class="text-nowrap"
+                        >(html - css - sass - npm)</small
+                      >
+                    </div>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">angular</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">Vue</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">Type Script</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">Java Script</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">NodeJs</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 50%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">Python</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="65"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                  </li>
+                  <li
+                    class="progress-bar-container d-flex align-items-center text-capitalize"
+                  >
+                    <strong class="text-nowrap">Azure Ai Services</strong>
+                    <div
+                      class="progress w-100 ms-3"
+                      role="progressbar"
+                      aria-label="Success example"
+                      aria-valuenow="60"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 text-center pt-5">
+              <button class="btn btn-primary px-5 rounded-pill">
+                learn more
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="py-5">
+      <section class="py-5" id="projects">
         <h4 class="title">we have a great portfolio to check</h4>
+        <p class="m-0 text-center">
+          <small>
+            I always follow professional workflow and provide you best service.
+          </small>
+        </p>
+
+        <div class="container pt-5 projects-container">
+          <div class="row">
+            <div class="col-12 mb-5">
+              <ul class="justify-content-center nav">
+                <li class="nav-item active" data-category="all">
+                  <a class="nav-link">All</a>
+                </li>
+                <li class="nav-item" data-category="website">
+                  <a class="nav-link">Web Sites</a>
+                </li>
+                <li class="nav-item" data-category="dashboard">
+                  <a class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item" data-category="librarie">
+                  <a class="nav-link">Libraries</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row projects-parent"></div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="project-modal"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Modal title</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 text-center pt-5">
+              <button class="btn btn-primary px-5 rounded-pill">
+                Show More
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="py-5">
-        <h4 class="title">my workflow</h4>
-      </section>
-      <section class="py-5">
-        <h4 class="title">see clients feedback</h4>
-      </section>
-      <section class="py-5">
-        <h4 class="title">my success</h4>
-      </section>
-      <section class="py-5">
+      <!-- <section class="py-5">
         <h4 class="title">blogs & articles</h4>
-      </section>
-      <section class="py-5"></section>
+      </section> -->
     </main>
-    <footer>
+    <footer id="contact">
       <div class="container py-5">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 p-3">
@@ -261,35 +480,39 @@
             <ul class="list-unstyled">
               <li>
                 <small>
-                  <a class="text-dark text-decoration-none" href="#">Home</a>
-                </small>
-              </li>
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#"
-                    >Projects</a
+                  <a class="text-dark text-decoration-none" href="#home"
+                    >Home</a
                   >
                 </small>
               </li>
               <li>
                 <small>
-                  <a class="text-dark text-decoration-none" href="#">Blogs</a>
+                  <a class="text-dark text-decoration-none" href="#services"
+                    >Services</a
+                  >
                 </small>
               </li>
               <li>
                 <small>
-                  <a class="text-dark text-decoration-none" href="#"
+                  <a class="text-dark text-decoration-none" href="#aboutme"
                     >About Me</a
                   >
                 </small>
               </li>
               <li>
                 <small>
-                  <a class="text-dark text-decoration-none" href="#"
-                    >Contact Me</a
+                  <a class="text-dark text-decoration-none" href="#projects"
+                    >Projects</a
                   >
                 </small>
               </li>
+              <!-- <li>
+                <small>
+                  <a class="text-dark text-decoration-none" href="#"
+                    >Blogs & Articals</a
+                  >
+                </small>
+              </li> -->
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3 py-4 px-3">

@@ -21,10 +21,11 @@
 }
 .nav-item:hover:not(.contact) a,
 .nav-item.active a {
-    color: var(--light-blue);
+    color: var(--light-blue)!important;
 }
 .nav-item .nav-link {
     -webkit-user-select: none;
     user-select: none;
     text-transform: capitalize;
+    color: rgba(var(--bs-emphasis-color-rgb), 0.65)!important;
 }

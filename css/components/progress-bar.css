@@ -1,0 +1,9 @@
+.progress-bar-container {
+    margin-bottom: .5rem;
+}
+.progress-bar-container strong{
+    width: 200px;
+}
+.progress-bar-container .progress-bar {
+    background-color: var(--hot-red)!important;
+}

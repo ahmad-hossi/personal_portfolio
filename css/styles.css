@@ -84,8 +84,8 @@ main section .title {
 }
 .photo-container .cloud {
     position: absolute;
-    bottom: -87px;
-    left: 16px;
+    bottom: -90px;
+    left: 0px;
     z-index: 3;
     height: 141px;
 }
@@ -96,4 +96,61 @@ main section .title {
     background: #fff;
     box-shadow: 0 0 40px var(--light-blue);
     border-radius: 8px;
+}
+
+
+.skills-photo-container {
+    height: 400px;
+    width: 300px;
+    max-width: 99%;
+    position: relative;
+    text-align: center;
+}
+.skills-photo-container:after {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 80%;
+    left: 10px;
+    bottom: 0;
+    background-color: var(--primary-blue);
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.skills-photo-container:before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    right: 10px;
+    bottom: -20px;
+    background-color: var(--hot-red);
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.skills-photo-container .photo {
+    z-index: 2;
+    position: relative;
+}
+.skills-photo-container .top-corner {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 6px;
+    left: -16px;
+    top: calc(30% - 32px);
+    background-color: var(--hot-red);
+}
+
+.skills-photo-container .left-corner {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 60%;
+    left: -16px;
+    top: calc(30% - 32px);
+    background-color: var(--hot-red);
+}
+.projects-container .project img {
+    object-fit: cover;
 }
