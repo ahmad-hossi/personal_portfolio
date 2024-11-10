@@ -133,7 +133,7 @@ main section .title {
     z-index: 2;
     position: relative;
 }
-.skills-photo-container .top-corner {
+/* .skills-photo-container .top-corner {
     content: "";
     position: absolute;
     height: 50%;
@@ -151,7 +151,7 @@ main section .title {
     left: -16px;
     top: calc(30% - 32px);
     background-color: var(--hot-red);
-}
+} */
 .projects-container .project span {
     position: relative;
     cursor: pointer;
