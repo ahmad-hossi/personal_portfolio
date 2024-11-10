@@ -89,10 +89,8 @@ document.onload = (() => {
     }
     $('#projects .projects-parent .project').show(600)
     $('.nav-item').on('click', (e) => {
-        if(!$(e.target).parent().hasClass('contact')) {
-            $(e.target).parent().siblings().removeClass('active')
-            $(e.target).parent().addClass('active')
-        }
+          $(e.target).parent().siblings().removeClass('active')
+          $(e.target).parent().addClass('active')
     })
     $('#projects .nav-item').on('click', (e) => {
         console.log()
