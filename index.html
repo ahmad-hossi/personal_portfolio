@@ -1,281 +1,212 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./libs/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/components/alert.css" />
-    <link rel="stylesheet" href="./css/components/buttons.css" />
-    <link rel="stylesheet" href="./css/components/progress-bar.css" />
-    <link rel="stylesheet" href="./css/lang-dir-handling.css" />
-    <link rel="stylesheet" href="./font/roboto/style.css" />
-    <link rel="stylesheet" href="./font/sst-arabic/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar sticky navbar-expand-lg py-3">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./images/prand.png" class="me-2" width="50px" alt="" />
-            <strong>Abdulaziz Shahrour</strong>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-lg-0">
-              <li class="nav-item px-2 active">
-                <a class="nav-link" aria-current="page" href="#home">home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#services">services</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#projects">projects</a>
-              </li>
-              <!-- <li class="nav-item px-2">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./libs/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/components/alert.css" />
+  <link rel="stylesheet" href="./css/components/buttons.css" />
+  <link rel="stylesheet" href="./css/components/progress-bar.css" />
+  <link rel="stylesheet" href="./css/lang-dir-handling.css" />
+  <link rel="stylesheet" href="./font/roboto/style.css" />
+  <link rel="stylesheet" href="./font/sst-arabic/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar sticky navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/prand.png" class="me-2" width="50px" alt="" />
+          <strong>Ahmad Al-Hossi</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item px-2 active">
+              <a class="nav-link" aria-current="page" href="#home">home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <!-- <li class="nav-item px-2">
                 <a class="nav-link" href="#blogs-articles">blogs & articles</a>
               </li> -->
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#aboutme">about me</a>
-              </li>
-              <li class="nav-item px-2 contact">
-                <a href="#contact">
-                  <button
-                    class="btn btn-sm ms-3 py-2 px-3 rounded-pill custom-button hot-red"
-                  >
-                    Contact Me
-                  </button>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#aboutme">about me</a>
+            </li>
+            <li class="nav-item px-2 contact">
+              <a href="#contact">
+                <button class="btn btn-sm ms-3 py-2 px-3 rounded-pill custom-button hot-red">
+                  Contact Me
+                </button>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="pt-5" id="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center text-lg-start col-lg-6 order-2 hero">
-              <span>I'm A Professional</span>
-              <h1>Software Engineer</h1>
-              <div class="mt-5">
-                <a
-                  class="text-decoration-none"
-                  href="https://www.linkedin.com/in/abdulaziz-shahrour/overlay/1731069374569/single-media-viewer?type=DOCUMENT&profileId=ACoAAC-n2m0B4E8DaiC6fsOsne-DJs73BJ3uwVQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BCiHRxv%2BORNacXIoiNO4s%2FA%3D%3D"
-                >
-                  <button
-                    class="btn py-2 px-4 rounded-pill custom-button hot-red"
-                  >
-                    My CV
-                  </button>
-                </a>
-                <a
-                  class="text-decoration-none"
-                  href="https://www.linkedin.com/in/abdulaziz-shahrour/"
-                >
-                  <button
-                    class="btn ms-2 p-2 px-3 rounded-pill custom-button primary-blue"
-                  >
-                    <i class="mdi mdi-linkedin mdi-16px"></i>
-                  </button>
-                </a>
-              </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="pt-5" id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-lg-start col-lg-6 order-2 hero">
+            <span>I'm A Professional</span>
+            <h1>Software Engineer</h1>
+            <div class="mt-5">
+              <a class="text-decoration-none"
+                href="https://drive.google.com/file/d/1e_mAR1WGjuve8i72D61aXns3BLe4fnwS/view?usp=drive_link">
+                <button class="btn py-2 px-4 rounded-pill custom-button hot-red">
+                  My CV
+                </button>
+              </a>
+              <a class="text-decoration-none" href="https://www.linkedin.com/in/ahmad-hossi/">
+                <button class="btn ms-2 p-2 px-3 rounded-pill custom-button primary-blue">
+                  <i class="mdi mdi-linkedin mdi-16px"></i>
+                </button>
+              </a>
             </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-2">
-              <div class="photo-container">
-                <!-- <div class="bg-circle"></div> -->
-                <img src="./images/photo.png" class="h-100 photo" alt="" />
-                <!-- <img src="./images/cloud.png" class="w-100 cloud" alt="" /> -->
-              </div>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="photo-container">
+              <!-- <div class="bg-circle"></div> -->
+              <img src="./images/photo.png" class="h-100 photo" alt="" />
+              <!-- <img src="./images/cloud.png" class="w-100 cloud" alt="" /> -->
             </div>
           </div>
         </div>
-      </section>
-      <section class="py-5" id="services">
-        <h4 class="title">provide you best best software service</h4>
-        <p class="m-0 text-center">
-          <small>
-            I always follow professional workflow and provide you best service.
-          </small>
-        </p>
-        <div class="container pt-5">
-          <div class="row">
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/front-end.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">Front end development</h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/ai-development.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">
-                Artificial intelligence Development
-              </h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/full-stack-developments.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">Full Stack Development</h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/web-app.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">Web Apps</h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/web-elements.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">Web Elements</h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
-            <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
-              <img
-                src="./images/services/responsive.png"
-                width="64"
-                height="64"
-                alt=""
-              />
-              <h5 class="fw-bold mb-3 mt-4">Responsive Applications</h5>
-              <p class="m-0 mx-auto" style="width: 80%">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
-                reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
-                blanditiis et illum mollitia vel aperiam.
-              </p>
-            </div>
+      </div>
+    </section>
+    <section class="py-5" id="services">
+      <h4 class="title">provide you best best software service</h4>
+      <p class="m-0 text-center">
+        <small>
+          I always follow professional workflow and provide you best service.
+        </small>
+      </p>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/front-end.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">Front end development</h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
+          </div>
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/ai-development.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">
+              Artificial intelligence Development
+            </h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
+          </div>
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/full-stack-developments.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">Mobile Development</h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
+          </div>
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/web-app.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">Web Apps</h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
+          </div>
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/web-elements.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">Web Elements</h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
+          </div>
+          <div class="text-center col-12 col-md-6 col-lg-4 py-5 px-3 service">
+            <img src="./images/services/responsive.png" width="64" height="64" alt="" />
+            <h5 class="fw-bold mb-3 mt-4">Responsive Applications</h5>
+            <p class="m-0 mx-auto" style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum numquam nesciunt dolorem pariatur corporis, earum totam
+              reprehenderit? Dolore, aliquam odit ducimus delectus earum quae
+              blanditiis et illum mollitia vel aperiam.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="py-5" id="aboutme">
-        <h4 class="title">about me</h4>
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-12 col-md-5 d-none d-md-block">
-              <div class="photo-container mx-auto">
-                <span class="top-corner"></span>
-                <span class="left-corner"></span>
-                <img src="./images/photo.png" class="h-100 photo" alt="" />
-              </div>
+      </div>
+    </section>
+    <section class="py-5" id="aboutme">
+      <h4 class="title">about me</h4>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-5 d-none d-md-block">
+            <div class="photo-container mx-auto">
+              <span class="top-corner"></span>
+              <span class="left-corner"></span>
+              <img src="./images/photo.png" class="h-100 photo" alt="" />
             </div>
-            <div class="col-12 col-md-7">
-              <p>
-                An experienced front-end developer, my role is to write and
-                design front-end components that meet the requirements of our
-                models and fulfill our users' stories. Proficient in Angular 6+,
-                Vue.js, JQuery, Cascading Style Sheets, CSS, JavaScript, and
-                SCSS. A strong engineering professional with a Bachelor's degree
-                in Computer Science from Aleppo University.
-                <br />
-                keen on different types of technology. Some of my other
-                interests are learning different languages like English. And in
-                order to further develop myself, I learn something new every day
-                by collecting knowledge from various branches of science, this
-                helps me motivate my work and allows me to move forward steadily
-                in my career path.
-              </p>
-              <h5 class="title text-start">my skills</h5>
-              <div>
-                <ul class="list-unstyled">
-                  <li
-                    class="progress-bar-container d-flex align-items-center text-capitalize"
-                  >
-                    <div>
-                      <strong class="text-nowrap">Front end languages</strong
-                      ><br />
-                      <small class="text-nowrap"
-                        >(html - css - sass - npm)</small
-                      >
-                    </div>
-                    <div
-                      class="progress w-100 ms-3"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div class="progress-bar" style="width: 100%"></div>
-                    </div>
-                  </li>
-                  <li
-                    class="progress-bar-container d-flex align-items-center text-capitalize"
-                  >
-                    <strong class="text-nowrap">angular</strong>
-                    <div
-                      class="progress w-100 ms-3"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div class="progress-bar" style="width: 90%"></div>
-                    </div>
-                  </li>
+          </div>
+          <div class="col-12 col-md-7">
+            <p>
+              From concept to execution, I thrive on the journey of mobile software development. Carefully translating
+              requirements into real, impactful applications is my passion. Every detail matters as I strive to create
+              meaningful experiences for users.
+              <br/>
+              As a software engineer, I find fulfillment in turning abstract ideas into tangible solutions. With a
+              dedication to excellence, I transform concepts into functional mobile applications that make a genuine
+              impact.
+
+              Also I'm interested in entrepreneurship, so let's share ideas 🚀
+            </p>
+            <h5 class="title text-start">my skills</h5>
+            <div>
+              <ul class="list-unstyled">
+                <li class="progress-bar-container d-flex align-items-center text-capitalize">
+                  <div>
+                    <strong class="text-nowrap">Front end languages</strong><br />
+                    <small class="text-nowrap">(html - css - sass - npm)</small>
+                  </div>
+                  <div class="progress w-100 ms-3" role="progressbar" aria-label="Success example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                </li>
+                <li class="progress-bar-container d-flex align-items-center text-capitalize">
+                  <strong class="text-nowrap">Flutter</strong>
+                  <div class="progress w-100 ms-3" role="progressbar" aria-label="Success example" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                  <!-- </li>
                   <li
                     class="progress-bar-container d-flex align-items-center text-capitalize"
                   >
@@ -290,8 +221,8 @@
                     >
                       <div class="progress-bar" style="width: 90%"></div>
                     </div>
-                  </li>
-                  <li
+                  </li> -->
+                  <!-- <li
                     class="progress-bar-container d-flex align-items-center text-capitalize"
                   >
                     <strong class="text-nowrap">Type Script</strong>
@@ -305,23 +236,15 @@
                     >
                       <div class="progress-bar" style="width: 90%"></div>
                     </div>
-                  </li>
-                  <li
-                    class="progress-bar-container d-flex align-items-center text-capitalize"
-                  >
-                    <strong class="text-nowrap">Java Script</strong>
-                    <div
-                      class="progress w-100 ms-3"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div class="progress-bar" style="width: 90%"></div>
-                    </div>
-                  </li>
-                  <li
+                  </li> -->
+                <li class="progress-bar-container d-flex align-items-center text-capitalize">
+                  <strong class="text-nowrap">Java Script</strong>
+                  <div class="progress w-100 ms-3" role="progressbar" aria-label="Success example" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </li>
+                <!-- <li
                     class="progress-bar-container d-flex align-items-center text-capitalize"
                   >
                     <strong class="text-nowrap">NodeJs</strong>
@@ -335,330 +258,247 @@
                     >
                       <div class="progress-bar" style="width: 50%"></div>
                     </div>
-                  </li>
-                  <li
-                    class="progress-bar-container d-flex align-items-center text-capitalize"
-                  >
-                    <strong class="text-nowrap">Python</strong>
-                    <div
-                      class="progress w-100 ms-3"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="65"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div class="progress-bar" style="width: 65%"></div>
-                    </div>
-                  </li>
-                  <li
-                    class="progress-bar-container d-flex align-items-center text-capitalize"
-                  >
-                    <strong class="text-nowrap">Azure Ai Services</strong>
-                    <div
-                      class="progress w-100 ms-3"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      <div class="progress-bar" style="width: 60%"></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12">
-                <div class="row">
-                  <h5 class="title text-start">my interests</h5>
-                  <div class="col-12 col-md-6 col-lg-4 mb-2">
-                    Artiffcial Intelligence Chess
+                  </li> -->
+                <li class="progress-bar-container d-flex align-items-center text-capitalize">
+                  <strong class="text-nowrap">Python</strong>
+                  <div class="progress w-100 ms-3" role="progressbar" aria-label="Success example" aria-valuenow="65"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 65%"></div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-4 mb-2">Chess</div>
-                  <div class="col-12 col-md-6 col-lg-4 mb-2">Puzzles</div>
-                  <div class="col-12 col-md-6 col-lg-4 mb-2">Football</div>
-                  <div class="col-12 col-md-6 col-lg-4 mb-2">Reading</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-5" id="projects">
-        <h4 class="title">we have a great portfolio to check</h4>
-        <p class="m-0 text-center">
-          <small>
-            I always follow professional workflow and provide you best service.
-          </small>
-        </p>
-
-        <div class="container pt-5 projects-container">
-          <div class="row">
-            <div class="col-12 mb-5">
-              <ul class="justify-content-center nav">
-                <li class="nav-item active" data-category="all">
-                  <a class="nav-link">All</a>
                 </li>
-                <li class="nav-item" data-category="website">
-                  <a class="nav-link">Web Sites</a>
-                </li>
-                <li class="nav-item" data-category="dashboard">
-                  <a class="nav-link">Dashboard</a>
-                </li>
-                <li class="nav-item" data-category="librarie">
-                  <a class="nav-link">Libraries</a>
+                <li class="progress-bar-container d-flex align-items-center text-capitalize">
+                  <strong class="text-nowrap">Firebase Services</strong>
+                  <div class="progress w-100 ms-3" role="progressbar" aria-label="Success example" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="row projects-parent"></div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="project-modal"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5">Modal title</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+            <div class="col-12">
+              <div class="row">
+                <h5 class="title text-start">my interests</h5>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                  Artiffcial Intelligence Chess
                 </div>
-                <div class="modal-body">
-                  <p></p>
-                  <a href="#">link to the project</a>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">Chess</div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">Puzzles</div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">Football</div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">Reading</div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- <section class="py-5">
-      <h4 class="title">blogs & articles</h4>
-    </section> -->
-      <section class="py-5" id="contact">
-        <h4 class="title">Contact Form</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-6 mx-auto">
-              <form action="/" id="contact-form">
-                <div class="mb-3">
-                  <label for="name">Name</label>
-                  <input
-                    class="form-control"
-                    placeholder="please enter your name"
-                    required
-                    type="text"
-                    id="name"
-                    name="name"
-                  />
-                  <small style="display: none" class="required text-danger"
-                    >field is required</small
-                  >
-                </div>
-                <div class="mb-3">
-                  <label for="email">E-mail</label>
-                  <input
-                    class="form-control mb-3"
-                    placeholder="please enter your e-mail"
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                  />
-                  <div>
-                    <small style="display: none" class="required text-danger"
-                      >field is required</small
-                    >
-                  </div>
-                  <div>
-                    <small
-                      style="display: none"
-                      class="email_pattern text-danger"
-                      >please enter valid E-mail</small
-                    >
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label for="message">message</label>
-                  <textarea
-                    class="form-control mb-3"
-                    row="4"
-                    placeholder="Type here..."
-                    type="text"
-                    name="message"
-                    id="message"
-                  ></textarea>
-                </div>
-                <button class="btn btn-sm btn-primary px-3" id="send-message">
-                  Send to me
+      </div>
+    </section>
+    <section class="py-5" id="projects">
+      <h4 class="title">we have a great portfolio to check</h4>
+      <p class="m-0 text-center">
+        <small>
+          I always follow professional workflow and provide you best service.
+        </small>
+      </p>
+
+      <div class="container pt-5 projects-container">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <ul class="justify-content-center nav">
+              <li class="nav-item active" data-category="all">
+                <a class="nav-link">All</a>
+              </li>
+              <li class="nav-item" data-category="website">
+                <a class="nav-link">Web Sites</a>
+              </li>
+              <li class="nav-item" data-category="dashboard">
+                <a class="nav-link">Dashboard</a>
+              </li>
+              <li class="nav-item" data-category="librarie">
+                <a class="nav-link">Libraries</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row projects-parent"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="project-modal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p></p>
+                <a href="#">link to the project</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container py-5">
+      </div>
+    </section>
+    <!-- <section class="py-5">
+      <h4 class="title">blogs & articles</h4>
+    </section> -->
+    <section class="py-5" id="contact">
+      <h4 class="title">Contact Form</h4>
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 p-3">
-            <a class="navbar-brand" href="./index.html">
-              <img src="./images/prand.png" class="me-2" width="50px" alt="" />
-              <strong>Abdulaziz Shahrour</strong>
-            </a>
-            <p class="mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-              perspiciatis voluptas laborum ab amet, quis, laudantium ipsa cum
-              voluptatibus soluta nihil minus? Minima dolorem sint saepe,
-              possimus corporis deleniti voluptatem.
-            </p>
+          <div class="col-6 mx-auto">
+            <form action="/" id="contact-form">
+              <div class="mb-3">
+                <label for="name">Name</label>
+                <input class="form-control" placeholder="please enter your name" required type="text" id="name"
+                  name="name" />
+                <small style="display: none" class="required text-danger">field is required</small>
+              </div>
+              <div class="mb-3">
+                <label for="email">E-mail</label>
+                <input class="form-control mb-3" placeholder="please enter your e-mail" type="email" id="email"
+                  name="email" required />
+                <div>
+                  <small style="display: none" class="required text-danger">field is required</small>
+                </div>
+                <div>
+                  <small style="display: none" class="email_pattern text-danger">please enter valid E-mail</small>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message">message</label>
+                <textarea class="form-control mb-3" row="4" placeholder="Type here..." type="text" name="message"
+                  id="message"></textarea>
+              </div>
+              <button class="btn btn-sm btn-primary px-3" id="send-message">
+                Send to me
+              </button>
+            </form>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
-            <h6 class="mb-3 pb-2">
-              <strong>Site Map</strong>
-            </h6>
-            <ul class="list-unstyled">
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#home"
-                    >Home</a
-                  >
-                </small>
-              </li>
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#services"
-                    >Services</a
-                  >
-                </small>
-              </li>
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#aboutme"
-                    >About Me</a
-                  >
-                </small>
-              </li>
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#projects"
-                    >Projects</a
-                  >
-                </small>
-              </li>
-              <li>
-                <small>
-                  <a class="text-dark text-decoration-none" href="#contact"
-                    >Contact</a
-                  >
-                </small>
-              </li>
-              <!-- <li>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/prand.png" class="me-2" width="50px" alt="" />
+            <strong>Ahmad Al-Hossi</strong>
+          </a>
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+            perspiciatis voluptas laborum ab amet, quis, laudantium ipsa cum
+            voluptatibus soluta nihil minus? Minima dolorem sint saepe,
+            possimus corporis deleniti voluptatem.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+          <h6 class="mb-3 pb-2">
+            <strong>Site Map</strong>
+          </h6>
+          <ul class="list-unstyled">
+            <li>
+              <small>
+                <a class="text-dark text-decoration-none" href="#home">Home</a>
+              </small>
+            </li>
+            <li>
+              <small>
+                <a class="text-dark text-decoration-none" href="#services">Services</a>
+              </small>
+            </li>
+            <li>
+              <small>
+                <a class="text-dark text-decoration-none" href="#aboutme">About Me</a>
+              </small>
+            </li>
+            <li>
+              <small>
+                <a class="text-dark text-decoration-none" href="#projects">Projects</a>
+              </small>
+            </li>
+            <li>
+              <small>
+                <a class="text-dark text-decoration-none" href="#contact">Contact</a>
+              </small>
+            </li>
+            <!-- <li>
                 <small>
                   <a class="text-dark text-decoration-none" href="#"
                     >Blogs & Articals</a
                   >
                 </small>
               </li> -->
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
-            <h6 class="mb-3 pb-2">
-              <strong>Social Media</strong>
-            </h6>
-            <ul class="list-unstyled social-media-list">
-              <li class="d-inline-flex align-items-center">
-                <span
-                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
-                  style="color: #0077b5"
-                >
-                  <i class="mdi mdi-linkedin"></i>
-                </span>
-              </li>
-              <li class="d-inline-flex align-items-center">
-                <span
-                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
-                  style="color: #1877f2"
-                >
-                  <i class="mdi mdi-facebook"></i>
-                </span>
-              </li>
-              <li class="d-inline-flex align-items-center">
-                <span
-                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
-                  style="color: #40c351"
-                >
-                  <i class="mdi mdi-whatsapp"></i>
-                </span>
-              </li>
-              <li class="d-inline-flex align-items-center">
-                <span
-                  class="d-inline-flex justify-content-center align-items-center rounded-circle"
-                  style="color: #29b6f6"
-                >
-                  <i class="mdi mdi-telegram"></i>
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
-            <h6 class="mb-3 pb-2">
-              <strong>Contact</strong>
-            </h6>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+          <h6 class="mb-3 pb-2">
+            <strong>Social Media</strong>
+          </h6>
+          <ul class="list-unstyled social-media-list">
+            <li class="d-inline-flex align-items-center">
+              <span class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                style="color: #0077b5">
+                <i class="mdi mdi-linkedin"></i>
+              </span>
+            </li>
+            <li class="d-inline-flex align-items-center">
+              <span class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                style="color: #1877f2">
+                <i class="mdi mdi-facebook"></i>
+              </span>
+            </li>
+            <li class="d-inline-flex align-items-center">
+              <span class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                style="color: #40c351">
+                <i class="mdi mdi-whatsapp"></i>
+              </span>
+            </li>
+            <li class="d-inline-flex align-items-center">
+              <span class="d-inline-flex justify-content-center align-items-center rounded-circle"
+                style="color: #29b6f6">
+                <i class="mdi mdi-telegram"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-4 px-3">
+          <h6 class="mb-3 pb-2">
+            <strong>Contact</strong>
+          </h6>
 
-            <ul class="list-unstyled">
-              <li>
-                <small> Phone: +963 957 982 468 </small>
-              </li>
-              <li>
-                <small> E-mail: ite.abdo.sh.crafter.front@gmail.com</small>
-              </li>
-              <li>
-                <small> Address: Syria - Aleppo</small>
-              </li>
-            </ul>
-          </div>
+          <ul class="list-unstyled">
+            <li>
+              <small> Phone: +963 950 011 344 </small>
+            </li>
+            <li>
+              <small> E-mail: ahmad.hessi.96@gmail.com</small>
+            </li>
+            <li>
+              <small> Address: Syria - Aleppo</small>
+            </li>
+          </ul>
         </div>
       </div>
-      <p class="m-0 p-3 text-center copy-rights">
-        Made with ❤️ By Abdulaziz Shahrour &copy 2024 - All Rights Reserved
-      </p>
-    </footer>
-    <div
-      class="alert alert-primary"
-      id="success-send-message"
-      style="display: none"
-      role="alert"
-    >
-      Thanks for messaging, Message sent Successfuly.
     </div>
-    <div
-      class="alert alert-danger"
-      id="danger-send-message"
-      style="display: none"
-      role="alert"
-    >
-      please fill all required fields with valid value.
-    </div>
-    <script src="./libs/popper.min.js"></script>
-    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./libs/jquery/dist/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+    <p class="m-0 p-3 text-center copy-rights">
+      Made with ❤️ By Ahmad Al-Hossi &copy 2024 - All Rights Reserved
+    </p>
+  </footer>
+  <div class="alert alert-primary" id="success-send-message" style="display: none" role="alert">
+    Thanks for messaging, Message sent Successfuly.
+  </div>
+  <div class="alert alert-danger" id="danger-send-message" style="display: none" role="alert">
+    please fill all required fields with valid value.
+  </div>
+  <script src="./libs/popper.min.js"></script>
+  <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./libs/jquery/dist/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
