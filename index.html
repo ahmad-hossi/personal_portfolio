@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/components/alert.css" />
     <link rel="stylesheet" href="./css/components/buttons.css" />
     <link rel="stylesheet" href="./css/components/progress-bar.css" />
     <link rel="stylesheet" href="./css/lang-dir-handling.css" />
@@ -373,11 +374,18 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="col-12 text-center pt-5">
-              <button class="btn btn-primary px-5 rounded-pill">
-                learn more
-              </button>
+              <div class="col-12">
+                <div class="row">
+                  <h5 class="title text-start">my interests</h5>
+                  <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    Artiffcial Intelligence Chess
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-2">Chess</div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-2">Puzzles</div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-2">Football</div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-2">Reading</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -428,7 +436,10 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">...</div>
+                <div class="modal-body">
+                  <p></p>
+                  <a href="#">link to the project</a>
+                </div>
                 <div class="modal-footer">
                   <button
                     type="button"
@@ -437,28 +448,73 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
-                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 text-center pt-5">
-              <button class="btn btn-primary px-5 rounded-pill">
-                Show More
-              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- <section class="py-5">
-        <h4 class="title">blogs & articles</h4>
-      </section> -->
+      <h4 class="title">blogs & articles</h4>
+    </section> -->
+      <section class="py-5" id="contact">
+        <h4 class="title">Contact Form</h4>
+        <div class="col-6 mx-auto">
+          <form action="/" id="contact-form">
+            <div class="mb-3">
+              <label for="name">Name</label>
+              <input
+                class="form-control"
+                placeholder="please enter your name"
+                required
+                type="text"
+                id="name"
+                name="name"
+              />
+              <small style="display: none" class="required text-danger"
+                >field is required</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="email">E-mail</label>
+              <input
+                class="form-control mb-3"
+                placeholder="please enter your e-mail"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <div>
+                <small style="display: none" class="required text-danger"
+                  >field is required</small
+                >
+              </div>
+              <div>
+                <small style="display: none" class="email_pattern text-danger"
+                  >please enter valid E-mail</small
+                >
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message">message</label>
+              <textarea
+                class="form-control mb-3"
+                row="4"
+                placeholder="Type here..."
+                type="text"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button class="btn btn-sm btn-primary px-3" id="send-message">
+              Send to me
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer id="contact">
+    <footer>
       <div class="container py-5">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 p-3">
@@ -577,6 +633,22 @@
         Made with ❤️ By Abdulaziz Shahrour &copy 2024 - All Rights Reserved
       </p>
     </footer>
+    <div
+      class="alert alert-primary"
+      id="success-send-message"
+      style="display: none"
+      role="alert"
+    >
+      Thanks for messaging, Message sent Successfuly.
+    </div>
+    <div
+      class="alert alert-danger"
+      id="danger-send-message"
+      style="display: none"
+      role="alert"
+    >
+      please fill all required fields with valid value.
+    </div>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
