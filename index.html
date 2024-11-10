@@ -459,58 +459,64 @@
     </section> -->
       <section class="py-5" id="contact">
         <h4 class="title">Contact Form</h4>
-        <div class="col-6 mx-auto">
-          <form action="/" id="contact-form">
-            <div class="mb-3">
-              <label for="name">Name</label>
-              <input
-                class="form-control"
-                placeholder="please enter your name"
-                required
-                type="text"
-                id="name"
-                name="name"
-              />
-              <small style="display: none" class="required text-danger"
-                >field is required</small
-              >
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <form action="/" id="contact-form">
+                <div class="mb-3">
+                  <label for="name">Name</label>
+                  <input
+                    class="form-control"
+                    placeholder="please enter your name"
+                    required
+                    type="text"
+                    id="name"
+                    name="name"
+                  />
+                  <small style="display: none" class="required text-danger"
+                    >field is required</small
+                  >
+                </div>
+                <div class="mb-3">
+                  <label for="email">E-mail</label>
+                  <input
+                    class="form-control mb-3"
+                    placeholder="please enter your e-mail"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <div>
+                    <small style="display: none" class="required text-danger"
+                      >field is required</small
+                    >
+                  </div>
+                  <div>
+                    <small
+                      style="display: none"
+                      class="email_pattern text-danger"
+                      >please enter valid E-mail</small
+                    >
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message">message</label>
+                  <textarea
+                    class="form-control mb-3"
+                    row="4"
+                    placeholder="Type here..."
+                    type="text"
+                    name="message"
+                    id="message"
+                  ></textarea>
+                </div>
+                <button class="btn btn-sm btn-primary px-3" id="send-message">
+                  Send to me
+                </button>
+              </form>
             </div>
-            <div class="mb-3">
-              <label for="email">E-mail</label>
-              <input
-                class="form-control mb-3"
-                placeholder="please enter your e-mail"
-                type="email"
-                id="email"
-                name="email"
-                required
-              />
-              <div>
-                <small style="display: none" class="required text-danger"
-                  >field is required</small
-                >
-              </div>
-              <div>
-                <small style="display: none" class="email_pattern text-danger"
-                  >please enter valid E-mail</small
-                >
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="message">message</label>
-              <textarea
-                class="form-control mb-3"
-                row="4"
-                placeholder="Type here..."
-                type="text"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button class="btn btn-sm btn-primary px-3" id="send-message">
-              Send to me
-            </button>
-          </form>
+          </div>
         </div>
       </section>
     </main>

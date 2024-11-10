@@ -25,6 +25,7 @@ main section .title {
 
 .hero {
     height: calc(100vh - 92px);
+    max-height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
